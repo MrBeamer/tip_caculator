@@ -1,14 +1,38 @@
 body{
   background-color: #ED194A;
   font-family: 'Jua', sans-serif;
+  color: #f7fff7;
+}
+
+/*to fix overflow scrollbars in the mobile views !!!!*/
+body,html {
+  overflow-x: hidden;
+}
+
+#headline {
+  padding-top: 26px;
+}
+
+hr {
+  width: 50%;
+}
+
+#tip {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+form {
+  margin-bottom: 0px;
 }
 
 #content-container {
   color: #f7fff7;
+  opacity: 0.8;
   border-radius: 74px;
   background: #ED194A;
-  box-shadow:  41px 41px 82px #d51743,
-               -41px -41px 82px #ff1c51;
+  box-shadow:  35px 35px 69px #d51743,
+             -35px -35px 69px #ff1c51;
   width: 50%;
   text-align: center;
 
@@ -17,39 +41,107 @@ body{
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
+
+  padding-bottom: 40px;
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
+#boxTip {
+  color: #f7fff7;
+  border-radius: 74px;
+  background: #19edbc;
+  width: 50%;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 29px;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+
+
+.tip-test {
+  display: flex;
+  justify-content: center;
 }
+
+
+/* input und select boxes*/
+
+#people-box input {
+  margin-bottom: 20px;
+}
+
 
 input {
   font-family: 'Jua', sans-serif;
+  font-size: 1em;
+  background-color: #f7fff7;
   border-radius: 5px;
+  padding: 10px;
   border: none;
+  width: 50%;
+  text-align: center;
 }
 
 select {
   font-family: 'Jua', sans-serif;
+  font-size: 1em;
+  background-color: #f7fff7;
+  padding: 10px;
   border-radius: 5px;
   border: none;
+  width: 50%;
 }
+
+
+/*button*/
 
 #calculate {
   font-family: 'Jua', sans-serif;
   border: none;
-  border-radius: 5px;
+  border-radius: 74px;
   background-color: #f7fff7;
-  padding: 10px;
+  /*padding: 20px;*/
+  width: 80%;
+  margin-top: 40px;
 }
+
+#calculate:hover {
+  color: #f7fff7;
+  background-color: #19edbc;
+}
+
+/*media*/
+
+  @media only screen and (max-width: 767px) {
+
+  #content-container {
+    width: 80%;
+  }
+  #boxTip{
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+}
+
+/*@media only screen and (width: 768px) {
+
+  #content-container {
+    width: 100%;
+  }
+  #boxTip{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+}*/

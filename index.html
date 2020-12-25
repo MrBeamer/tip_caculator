@@ -9,10 +9,12 @@
 </head>
 <body>
   <div id="content-container">
-    <h1>Tip Calculator</h1>
+    <h1 id="headline">Tip Calculator</h1>
+    <hr>
     <div id="calculator">
       <form>
         <h1> How much was your bill? </h1>
+        <!-- <label for="billing-amount">Billing:</label> -->
         <input id="billing-amount" type="text" placeholder="Bill amount">
         <h1> How was your service?</h1>
           <select id="service-quality">
@@ -23,18 +25,24 @@
           <option value="0.05">Bad</option>
         </select>
       </form>
-      <h1> How many people are sharing the bill?</h1>
-      <input id="people-amount" type="text" placeholder="Number of People">
-      <button type="button" id="calculate"> Calculate</button>
+      <div id="people-box">
+        <h1> How many are sharing the bill?</h1>
+        <input id="people-amount" type="text" placeholder="Number of People">
+      </div>
+      <div>
+        <button type="button" id="calculate"><h1>Calculate</h1></button>
+      </div>
     </div>
     <!-- caculator end-->
-    <div id="boxTip">
-      <span id="tip">0.00</span>
-      <small id="each">each person</small>
-    </div>
-    <!-- boxTip end-->
   </div>
   <!-- content-container end-->
+    <div id="boxTip">
+      <div class="tip-test">
+        <h1 id="tip">0.00</h1>
+        <h1 id="each">each person</h1>
+      </div>
+    </div>
+    <!-- boxTip end-->
   <script type="text/javascript" src="calculator.js"></script>
 </body>
 </html>
