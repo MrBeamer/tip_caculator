@@ -35,8 +35,8 @@ document.getElementById("tip").innerHTML = `${tip} Euro`;
 
 
 // Hidden tip amount on load / initial display state none (before calling function)
-// document.getElementById("boxTip").style.display = "none";
-// document.getElementById("each").style.display = "none";
+document.getElementById("boxTip").style.display = "none";
+document.getElementById("each").style.display = "none";
 
 //click button -> call function and start to calculating the tip -> displaying the tip
 document.getElementById("calculate").onclick = function () {
