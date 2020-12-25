@@ -65,19 +65,16 @@ form {
   margin-top: 29px;
 }
 
-
 .tip-test {
   display: flex;
   justify-content: center;
 }
-
 
 /* input und select boxes*/
 
 #people-box input {
   margin-bottom: 20px;
 }
-
 
 input {
   font-family: 'Jua', sans-serif;
@@ -99,7 +96,6 @@ select {
   border: none;
   width: 50%;
 }
-
 
 /*button*/
 
@@ -132,16 +128,3 @@ select {
     font-size: 15px;
   }
 }
-
-/*@media only screen and (width: 768px) {
-
-  #content-container {
-    width: 100%;
-  }
-  #boxTip{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 25px;
-  }
-
-}*/
