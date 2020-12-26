@@ -1,0 +1,28 @@
+#boxTip {
+  color: #f7fff7;
+  border-radius: 74px;
+  background: #19edbc;
+  width: 50%;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 29px;
+}
+
+
+#content-container {
+  color: #f7fff7;
+  opacity: 0.8;
+  border-radius: 74px;
+  background: #ED194A;
+  width: 50%;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
